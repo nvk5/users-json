@@ -25,7 +25,7 @@ export default {
             try {
                 commit('showUsersLoader')
 
-                const response = await axios.get('http://jsonplaceholder.typicode.com/users')
+                const response = await axios.get('https://jsonplaceholder.typicode.com/users')
                 
                 if (response.statusText === 'OK') {
                     commit('setUsers', response.data)
